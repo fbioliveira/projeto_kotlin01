@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seja bem vindo!"
+        android:text="App de Sorteio"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,14 +21,26 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="123dp"
-        android:layout_height="40dp"
+        android:layout_width="166dp"
+        android:layout_height="43dp"
         android:layout_marginTop="20dp"
-        android:onClick="clique"
-        android:text="Clique aqui"
-        android:textSize="10sp"
+        android:onClick="sortear"
+        android:text="Sortear um número"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
